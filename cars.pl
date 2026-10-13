@@ -25,8 +25,6 @@ can_buy(Cost) :-
 % =================================================================
 % LAB TASK 1 - MODEL ANSWER  (also consider the colour)
 
-% New rules: suggest only vehicles matching the requested colour
-% and costing less than the available budget.
 can_buy(Cost, Colour) :-
     car(Model, Price, _, Colour, _),
     Price < Cost,
